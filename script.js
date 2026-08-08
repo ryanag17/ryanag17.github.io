@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-/* =====================================================
-   LANGUAGE
-===================================================== */
+/* Languages: English/German */
 
 const translations = {
     en: {
@@ -40,7 +38,8 @@ const translations = {
             skillsHeading: "Things I work with.",
             contactSmall: "have a project?",
             contactHeading: "Let's talk.",
-            contactLink: "get in touch →"
+            contactLink: "get in touch →",
+            downloadCV: "download CV ↓"
         },
 
         projects: {
@@ -51,7 +50,8 @@ const translations = {
                 date: "2026",
                 description: "A football analytics application currently under development, focused on exploring SC Freiburg data through interactive statistics, visualizations and analytical tools, including player comparisons, visual player mapping and more.",
                 purpose: "The project is designed to make SC Freiburg data easier to explore while combining programming, data analysis and visualization into an interactive analytical platform. The application is currently under development and is not yet publicly available.",
-                technologies: ["Python", "Streamlit", "Pandas", "Data Analysis", "Visualization"]
+                technologies: ["Python", "Streamlit", "Pandas", "Data Analysis", "Visualization"],
+                link: null
             },
 
             deathtunes: {
@@ -61,7 +61,11 @@ const translations = {
                 date: "2026",
                 description: "A Lethal Company mod that allows custom sound effects to be played when a player dies in-game.",
                 purpose: "The project was created as an experiment in game modding, C# development, Unity integration and multiplayer networking. My friends also wanted me to try making a mod like this - so here it is.",
-                technologies: ["C#", "Unity", ".NET Framework"]
+                technologies: ["C#", "Unity", ".NET Framework"],
+                link: {
+                    url: "https://github.com/ryanag17/DeathTunes",
+                    label: "view on GitHub ↗"
+                }
             },
 
             ai: {
@@ -71,7 +75,11 @@ const translations = {
                 date: "2025 - 2026",
                 description: "A Bachelor's thesis investigating the implementation of artificial intelligence and digitalization processes in small and medium-sized enterprises, with a focus on their similarities and differences compared to larger corporations.",
                 purpose: "The thesis examined how SMEs approach AI implementation and digitalization, exploring the opportunities, challenges and practical considerations involved while comparing these processes with those of larger corporations.",
-                technologies: ["Bachelor's Thesis", "Artificial Intelligence", "Research", "SMEs", "Literature Review"]
+                technologies: ["Bachelor's Thesis", "Artificial Intelligence", "Research", "SMEs", "Literature Review"],
+                link: {
+                    url: "images/documents/BachelorThesis_RyanGeiler_Excerpt.pdf",
+                    label: "view Excerpt ↗"
+                }
             }
         },
 
@@ -87,9 +95,9 @@ const translations = {
         },
 
         personal: {
-            heroLabel: "personal / 2026",
-            heroLine1: "The things",
-            heroLine2: "I care about.",
+            heroLabel: "personal / blog",
+            heroLine1: "Let's talk",
+            heroLine2: "about stuff.",
             heroDescription: "Music, games, football, random thoughts, projects and whatever else happens to interest me.",
             latestPost: "latest post",
             latest: "latest",
@@ -110,13 +118,14 @@ const translations = {
         posts: {
             post1: {
                 category: "thoughts",
-                title: "Building my own little corner of the internet.",
-                short: "Why I decided to build a website from scratch and what I actually want to do with it.",
-                card: "Why I decided to build a website from scratch.",
+                title: "Welcome to my corner of the internet.",
+                short: "Why I decided to build this website from scratch and what I will do with it.",
+                card: "Why I decided to build this website from scratch.",
                 text: [
                     "I wanted a place that felt more personal than a traditional portfolio and more flexible than a standard social media profile.",
                     "So I decided to build my own website from scratch. The idea is to have one side that represents my professional work, education and projects, while another side is simply a place for everything else.",
-                    "Music, football, random thoughts, projects, experiments and whatever else I feel like writing about can live here."
+                    "Music, football, random thoughts, projects I am working on, and whatever else I feel like writing about can live here.",
+                    "So welcome. I'm happy that you are here. Enjoy your stay."
                 ]
             },
 
@@ -226,7 +235,8 @@ const translations = {
             skillsHeading: "Womit ich arbeite.",
             contactSmall: "ein projekt?",
             contactHeading: "Lass uns reden.",
-            contactLink: "kontakt aufnehmen →"
+            contactLink: "kontakt aufnehmen →",
+            downloadCV: "Lebenslauf herunterladen ↓"
         },
 
         projects: {
@@ -237,7 +247,8 @@ const translations = {
                 date: "2026",
                 description: "Eine derzeit in Entwicklung befindliche Fußballanalyse-Anwendung zur Erkundung von Daten des SC Freiburg durch interaktive Statistiken, Visualisierungen und analytische Werkzeuge, darunter Spielervergleiche, visuelle Spielerkarten und weitere Analysefunktionen.",
                 purpose: "Das Projekt soll die Erkundung von SC-Freiburg-Daten erleichtern und dabei Programmierung, Datenanalyse und Visualisierung in einer interaktiven Analyseplattform verbinden. Die Anwendung befindet sich derzeit in Entwicklung und ist noch nicht öffentlich verfügbar.",
-                technologies: ["Python", "Streamlit", "Pandas", "Datenanalyse", "Visualisierung"]
+                technologies: ["Python", "Streamlit", "Pandas", "Datenanalyse", "Visualisierung"],
+                link: null
             },
 
             deathtunes: {
@@ -247,7 +258,11 @@ const translations = {
                 date: "2026",
                 description: "Eine Lethal-Company-Mod, mit der benutzerdefinierte Soundeffekte beim Tod eines Spielers abgespielt werden können.",
                 purpose: "Das Projekt wurde als Experiment im Bereich Game-Modding, C#-Entwicklung, Unity-Integration und Multiplayer-Networking erstellt. Meine Freunde wollten außerdem, dass ich versuche, einen Mod wie diesen zu entwickeln - also, hier ist er.",
-                technologies: ["C#", "Unity", ".NET Framework"]
+                technologies: ["C#", "Unity", ".NET Framework"],
+                link: {
+                    url: "https://github.com/ryanag17/DeathTunes",
+                    label: "auf GitHub ansehen ↗"
+                }
             },
 
             ai: {
@@ -257,7 +272,11 @@ const translations = {
                 date: "2025 - 2026",
                 description: "Eine Bachelorarbeit zur Untersuchung der Implementierung von Künstlicher Intelligenz und Digitalisierungsprozessen in kleinen und mittleren Unternehmen mit Fokus auf deren Gemeinsamkeiten und Unterschieden im Vergleich zu größeren Unternehmen.",
                 purpose: "Die Bachelorarbeit untersuchte, wie KMU die Implementierung von KI und die Digitalisierung angehen, und beleuchtete dabei die damit verbundenen Chancen, Herausforderungen und praktischen Aspekte im Vergleich zu größeren Unternehmen.",
-                technologies: ["Bachelorarbeit","Künstliche Intelligenz", "Forschung", "Datenanalyse", "Literaturrecherche"]
+                technologies: ["Bachelorarbeit","Künstliche Intelligenz", "Forschung", "Datenanalyse", "Literaturrecherche"],
+                link: {
+                    url: "images/documents/BachelorThesis_RyanGeiler_Excerpt.pdf",
+                    label: "Auszug ansehen ↗"
+                }
             }
         },
 
@@ -273,9 +292,9 @@ const translations = {
         },
 
         personal: {
-            heroLabel: "persönlich / 2026",
-            heroLine1: "Die Dinge,",
-            heroLine2: "die mir wichtig sind.",
+            heroLabel: "persönlich / blog",
+            heroLine1: "Lass uns",
+            heroLine2: "über Dinge reden.",
             heroDescription: "Musik, Spiele, Fußball, zufällige Gedanken, Projekte und alles andere, was mich gerade interessiert.",
             latestPost: "letzter beitrag",
             latest: "aktuell",
@@ -296,13 +315,14 @@ const translations = {
         posts: {
             post1: {
                 category: "gedanken",
-                title: "Meine eigene kleine Ecke im Internet.",
-                short: "Warum ich beschlossen habe, eine Website von Grund auf selbst zu bauen und was ich damit vorhabe.",
-                card: "Warum ich beschlossen habe, eine Website von Grund auf selbst zu bauen.",
+                title: "Wilkommen in meiner Ecke des Internets.",
+                short: "Warum ich mich dazu entschieden habe, diese Website von Grund auf selbst zu erstellen und was ich damit vorhabe.",
+                card: "Warum ich mich dazu entschieden habe, diese Website von Grund auf selbst zu erstellen.",
                 text: [
-                    "Ich wollte einen Ort, der persönlicher als ein klassisches Portfolio und gleichzeitig flexibler als ein gewöhnliches Social-Media-Profil ist.",
-                    "Deshalb habe ich beschlossen, meine eigene Website von Grund auf zu bauen. Die eine Seite soll meine berufliche Arbeit, Ausbildung und Projekte zeigen, während die andere einfach ein Ort für alles andere ist.",
-                    "Musik, Fußball, zufällige Gedanken, Projekte, Experimente und alles, worüber ich sonst schreiben möchte, können hier ihren Platz finden."
+                    "Ich wollte einen Ort, der persönlicher ist als ein klassisches Portfolio und gleichzeitig flexibler als ein gewöhnliches Social-Media-Profil.",
+                    "Deshalb habe ich mich dazu entschieden, meine eigene Website von Grund auf selbst zu erstellen. Die Idee ist, eine Seite zu haben, die meine berufliche Arbeit, meine Ausbildung und meine Projekte repräsentiert, während die andere Seite einfach ein Ort für alles andere ist.",
+                    "Musik, Fußball, zufällige Gedanken, Projekte, an denen ich gerade arbeite, und alles andere, worüber ich schreiben möchte, können hier ihren Platz finden.",
+                    "Also willkommen. Ich freue mich, dass du hier bist. Viel Spaß beim Stöbern."
                 ]
             },
 
@@ -386,9 +406,7 @@ function getTranslation(path) {
     }, translations[currentLanguage]);
 }
 
-/* =====================================================
-   LANGUAGE SWITCHER ACTIVE STATE
-===================================================== */
+/* Language Switch */
 
 function updateLanguageSwitcher(language) {
     document.querySelectorAll("#language-en").forEach((button) => {
@@ -445,14 +463,14 @@ function setLanguage(language) {
 
     document.title = currentLanguage === "de"
         ? page === "Portfolio"
-            ? "Portfolio — Ryan Geiler"
+            ? "Portfolio - Ryan Geiler"
             : page === "Personal"
-                ? "Persönlich — Ryan Geiler"
+                ? "Persönlich - Ryan Geiler"
                 : "Ryan Geiler"
         : page === "Portfolio"
-            ? "Portfolio — Ryan Geiler"
+            ? "Portfolio - Ryan Geiler"
             : page === "Personal"
-                ? "Personal — Ryan Geiler"
+                ? "Personal - Ryan Geiler"
                 : "Ryan Geiler";
 }
 
@@ -472,9 +490,7 @@ function setupLanguageSwitchers() {
     });
 }
 
-/* =====================================================
-   SCROLL REVEAL
-===================================================== */
+/* Scroll Reveal */
 
 const revealElements = document.querySelectorAll(".reveal");
 
@@ -503,9 +519,7 @@ if ("IntersectionObserver" in window) {
     });
 }
 
-/* =====================================================
-   MODAL HELPERS
-===================================================== */
+/* Modal Helpers */
 
 const body = document.body;
 
@@ -529,13 +543,11 @@ function closeModal(modal) {
     body.classList.remove("modal-open");
 }
 
-/* =====================================================
-   PROJECT DATA
-===================================================== */
+/* Project Data/Documents */
 
-const projectLinks = {
-    bundesliga: "https://github.com/yourusername/bundesliga-analytics",
-    deathtunes: "https://github.com/ryanag17/DeathTunes"
+const cvFiles = {
+    en: "images/documents/ryan-geiler-cv-en.pdf",
+    de: "images/documents/ryan-geiler-cv-de.pdf"
 };
 
 const projectNumbers = {
@@ -549,9 +561,7 @@ function getProject(projectId) {
     return translations[currentLanguage].projects[key];
 }
 
-/* =====================================================
-   PROJECT MODAL
-===================================================== */
+/* Project Modal */
 
 const projectModal = document.getElementById("project-modal");
 
@@ -562,7 +572,7 @@ const projectDate = document.getElementById("project-date");
 const projectDescription = document.getElementById("project-description");
 const projectPurpose = document.getElementById("project-purpose");
 const projectTechnologies = document.getElementById("project-technologies");
-const projectGithub = document.getElementById("project-github");
+const projectLink = document.getElementById("project-link");
 
 let currentProjectId = null;
 
@@ -581,7 +591,16 @@ function displayProject(projectId) {
     projectDate.textContent = project.date;
     projectDescription.textContent = project.description;
     projectPurpose.textContent = project.purpose;
-    projectGithub.href = projectLinks[projectId];
+
+    if (project.link) {
+        projectLink.href = project.link.url;
+        projectLink.textContent = project.link.label;
+        projectLink.hidden = false;
+    } else {
+        projectLink.hidden = true;
+        projectLink.removeAttribute("href");
+        projectLink.textContent = "";
+    }
 
     projectTechnologies.innerHTML = "";
 
@@ -605,9 +624,7 @@ document.querySelectorAll(".project-trigger").forEach((trigger) => {
     });
 });
 
-/* =====================================================
-   POST DATA
-===================================================== */
+/* Post Info */
 
 const posts = [
     {
@@ -642,9 +659,7 @@ const posts = [
     }
 ];
 
-/* =====================================================
-   POST MODAL ELEMENTS
-===================================================== */
+/* Post Modal Elements */
 
 const postModal = document.getElementById("post-modal");
 const postModalImage = document.getElementById("post-modal-image");
@@ -685,19 +700,45 @@ function displayPost(index) {
         return;
     }
 
-    postModalImage.className = "post-modal-image";
-    postModalImage.classList.add(postMeta.imageClass);
+    if (postModalImage) {
+        postModalImage.className = "post-modal-image";
+        postModalImage.classList.add(postMeta.imageClass);
+    }
 
-    postModalCategory.textContent = post.category;
-    postModalDate.textContent = postMeta.date;
-    postModalNumber.textContent =
-        `${String(index + 1).padStart(2, "0")} / ${String(posts.length).padStart(2, "0")}`;
+    if (postModalCategory) {
+        postModalCategory.textContent = post.category;
+    }
 
-    postModalTitle.textContent = post.title;
+    if (postModalDate) {
+        postModalDate.textContent = postMeta.date;
+    }
 
-    postModalText.innerHTML = post.text
-        .map((paragraph) => `<p>${paragraph}</p>`)
-        .join("");
+    if (postModalNumber) {
+        postModalNumber.textContent =
+            `${String(index + 1).padStart(2, "0")} / ${String(posts.length).padStart(2, "0")}`;
+    }
+
+    if (postModalTitle) {
+        postModalTitle.textContent = post.title;
+    }
+
+    if (postModalText) {
+        postModalText.innerHTML = "";
+
+        post.text.forEach((paragraph) => {
+            const paragraphElement = document.createElement("p");
+            paragraphElement.textContent = paragraph;
+            postModalText.appendChild(paragraphElement);
+        });
+    }
+
+    if (postModal) {
+        const modalWindow = postModal.querySelector(".post-modal-window");
+
+        if (modalWindow) {
+            modalWindow.scrollTop = 0;
+        }
+    }
 }
 
 function setupPostTriggers() {
@@ -731,9 +772,7 @@ if (nextButton) {
     });
 }
 
-/* =====================================================
-   LOAD MORE
-===================================================== */
+/* Load more posts */
 
 const loadMoreButton = document.getElementById("load-more");
 
@@ -749,20 +788,25 @@ if (loadMoreButton) {
     });
 }
 
-/* =====================================================
-   CLOSE BUTTONS
-===================================================== */
+/* Close pop-ups */
 
-document.querySelectorAll(".modal-close").forEach((button) => {
-    button.addEventListener("click", () => {
-        closeModal(button.closest(".modal"));
-    });
-});
+/* Use delegated handlers so modal controls remain clickable even if
+   modal contents are changed dynamically. */
+document.addEventListener("click", (event) => {
+    const closeButton = event.target.closest(".modal-close");
 
-document.querySelectorAll(".modal-backdrop").forEach((backdrop) => {
-    backdrop.addEventListener("click", () => {
+    if (closeButton) {
+        event.preventDefault();
+        event.stopPropagation();
+        closeModal(closeButton.closest(".modal"));
+        return;
+    }
+
+    const backdrop = event.target.closest(".modal-backdrop");
+
+    if (backdrop && event.target === backdrop) {
         closeModal(backdrop.closest(".modal"));
-    });
+    }
 });
 
 document.addEventListener("keydown", (event) => {
@@ -775,9 +819,7 @@ document.addEventListener("keydown", (event) => {
     });
 });
 
-/* =====================================================
-   DYNAMIC CONTENT UPDATE
-===================================================== */
+/* Dynamic content updates */
 
 function updateDynamicContent() {
     /* Update project card descriptions. */
@@ -835,6 +877,13 @@ function updateDynamicContent() {
                 description.textContent = post.short;
             }
         }
+    }
+
+    /* Update the CV download for the current language. */
+    const cvDownload = document.getElementById("cv-download");
+
+    if (cvDownload) {
+        cvDownload.href = cvFiles[currentLanguage];
     }
 
     /* Keep an open project modal translated when language changes. */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Personal — Ryan Geiler</title>
+    <title>Personal - Ryan Geiler</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 
 <body class="personal-page">
@@ -54,13 +54,13 @@
     <section class="personal-hero reveal">
 
         <div class="personal-label" data-i18n="personal.heroLabel">
-            personal / 2026
+            personal / blog
         </div>
 
         <h1>
-            <span data-i18n="personal.heroLine1">The things</span>
+            <span data-i18n="personal.heroLine1">Let's talk</span>
             <br>
-            <span data-i18n="personal.heroLine2">I care about.</span>
+            <span data-i18n="personal.heroLine2">about stuff.</span>
         </h1>
 
         <p data-i18n="personal.heroDescription">
@@ -89,14 +89,13 @@
                 <div class="post-date">08.08.2026</div>
 
                 <h2 data-i18n="posts.post1.title">
-                    Building my own
-                    little corner
+                    Welcome to my corner 
                     of the internet.
                 </h2>
 
                 <p data-i18n="posts.post1.short">
-                    Why I decided to build a website from scratch
-                    and what I actually want to do with it.
+                    Why I decided to build this website from scratch
+                    and what I will do with it.
                 </p>
 
                 <span class="read-link" data-i18n="personal.readArticle">
@@ -119,13 +118,13 @@
         <div class="post-grid">
 
             <button class="post-card post-trigger" type="button" data-post="post-1">
-                <div class="post-card-image music">
+                <div class="post-card-image thoughts">
                     <span data-i18n="postCard.post1.category">01 / thoughts</span>
                 </div>
                 <div class="post-card-content">
                     <div class="post-date">08.08.2026</div>
-                    <h2 data-i18n="posts.post1.title">Building my own little corner of the internet.</h2>
-                    <p data-i18n="posts.post1.card">Why I decided to build a website from scratch.</p>
+                    <h2 data-i18n="posts.post1.title">Welcome to my corner of the internet.</h2>
+                    <p data-i18n="posts.post1.card">Why I decided to build this website from scratch.</p>
                     <span class="read-link" data-i18n="personal.read">read →</span>
                 </div>
             </button>
@@ -237,7 +236,7 @@
             ×
         </button>
 
-        <div class="post-modal-image" id="post-modal-image">
+        <div class="post-modal-image featured-image-one" id="post-modal-image">
             <span id="post-modal-category">thoughts</span>
         </div>
 
@@ -245,22 +244,54 @@
 
             <div class="post-modal-meta">
                 <span id="post-modal-date">08.08.2026</span>
-                <span id="post-modal-number">01 / 06</span>
+                <span id="post-modal-number">01 / 01</span>
             </div>
 
-            <h2 id="post-modal-title">Post title</h2>
+            <h2 id="post-modal-title">
+            Welcome to my corner of the internet.
+            </h2>
 
             <div class="post-modal-text" id="post-modal-text">
-                Post text.
+
+                <p>
+                    I wanted a place that felt more personal than a traditional
+                    portfolio and more flexible than a standard social media profile.
+                </p>
+
+                <p>
+                    So I decided to build my own website from scratch. The idea is
+                    to have one side that represents my professional work, education
+                    and projects, while another side is simply a place for everything else.
+                </p>
+
+                <p>
+                    Music, football, random thoughts, projects I am working on,
+                    and whatever else I feel like writing about can live here.
+                </p>
+
+                <p>
+                    So welcome. I'm happy that you are here. Enjoy your stay.
+                </p>
+
             </div>
 
             <div class="post-modal-navigation">
 
-                <button type="button" class="post-nav-button" id="post-previous" data-i18n="modal.previous">
+                <button
+                    type="button"
+                    class="post-nav-button"
+                    id="post-previous"
+                    data-i18n="modal.previous"
+                >
                     ← previous
                 </button>
 
-                <button type="button" class="post-nav-button" id="post-next" data-i18n="modal.next">
+                <button
+                    type="button"
+                    class="post-nav-button"
+                    id="post-next"
+                    data-i18n="modal.next"
+                >
                     next →
                 </button>
 
@@ -272,7 +303,7 @@
 
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=3"></script>
 
 </body>
 </html>

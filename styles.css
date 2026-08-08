@@ -1,6 +1,4 @@
-/* =========================================================
-   RESET
-========================================================= */
+/* Rest */
 
 * {
     margin: 0;
@@ -44,9 +42,7 @@ a {
 }
 
 
-/* =========================================================
-   VARIABLES
-========================================================= */
+/* Variables */
 
 :root {
     --black: #0a0a0a;
@@ -58,9 +54,7 @@ a {
 }
 
 
-/* =========================================================
-   SCROLL REVEAL
-========================================================= */
+/* Scroll Reveal */
 
 .reveal {
     opacity: 0;
@@ -77,9 +71,7 @@ a {
 }
 
 
-/* =========================================================
-   LANDING PAGE
-========================================================= */
+/* Landing Page */
 
 .landing-page {
     width: 100%;
@@ -252,9 +244,7 @@ a {
 }
 
 
-/* =========================================================
-   NAVIGATION
-========================================================= */
+/* Navigation */
 
 .navigation {
     position: relative;
@@ -272,7 +262,7 @@ a {
 }
 
 .navigation-logo {
-    font-size: 1.15rem;
+    font-size: 1.50rem;
 
     font-weight: 700;
 
@@ -382,9 +372,7 @@ a {
 }
 
 
-/* =========================================================
-   PORTFOLIO HERO
-========================================================= */
+/* Portfolio: Hero */
 
 .portfolio-page {
     background: var(--cream);
@@ -474,9 +462,7 @@ a {
 }
 
 
-/* =========================================================
-   PORTFOLIO SECTIONS
-========================================================= */
+/* Portfolio: Sections */
 
 .portfolio-section {
     width: 100%;
@@ -507,9 +493,7 @@ a {
 }
 
 
-/* =========================================================
-   ABOUT
-========================================================= */
+/* Portfolio: About */
 
 .about-content {
     max-width: 1000px;
@@ -547,9 +531,7 @@ a {
 }
 
 
-/* =========================================================
-   EXPERIENCE
-========================================================= */
+/* Portfolio: Experience */
 
 .experience-container {
     display: grid;
@@ -654,9 +636,7 @@ a {
 }
 
 
-/* =========================================================
-   EDUCATION
-========================================================= */
+/* Portfolio: Education */
 
 .education-container {
     width: 100%;
@@ -741,9 +721,7 @@ a {
 }
 
 
-/* =========================================================
-   PROJECTS
-========================================================= */
+/* Portfolio: Projects */
 
 .projects-grid {
     display: grid;
@@ -817,11 +795,13 @@ a {
 }
 
 .project-image-one {
-    background: #171717;
+    background: #171717 url("images/projects/sc-freiburg.svg") center / cover no-repeat;
 }
 
 .project-image-one::before {
     content: "";
+
+    display: none;
 
     position: absolute;
 
@@ -839,6 +819,8 @@ a {
 .project-image-one::after {
     content: "";
 
+    display: none;
+
     position: absolute;
 
     width: 250px;
@@ -853,11 +835,13 @@ a {
 }
 
 .project-image-two {
-    background: #262626;
+    background: #262626 url("images/projects/lethalcompany.jpg") center / cover no-repeat;
 }
 
 .project-image-two::before {
     content: "";
+
+    display: none;
 
     position: absolute;
 
@@ -875,6 +859,8 @@ a {
 .project-image-two::after {
     content: "";
 
+    display: none;
+
     position: absolute;
 
     width: 100px;
@@ -889,11 +875,13 @@ a {
 }
 
 .project-image-three {
-    background: #d4d3ce;
+    background: #d4d3ce url("images/projects/bachelorthesis2.jpg") center / cover no-repeat;
 }
 
 .project-image-three::before {
     content: "";
+
+    display: none;
 
     position: absolute;
 
@@ -910,6 +898,8 @@ a {
 
 .project-image-three::after {
     content: "";
+
+    display: none;
 
     position: absolute;
 
@@ -991,9 +981,7 @@ a {
 }
 
 
-/* =========================================================
-   SKILLS
-========================================================= */
+/* Portfolio: Skills */
 
 .skills-container {
     max-width: 1000px;
@@ -1037,9 +1025,7 @@ a {
 }
 
 
-/* =========================================================
-   PORTFOLIO CONTACT
-========================================================= */
+/* Portfolio: Contact */
 
 .portfolio-contact {
     min-height: 80vh;
@@ -1091,9 +1077,7 @@ a {
 }
 
 
-/* =========================================================
-   PERSONAL HERO
-========================================================= */
+/* Personal: Hero */
 
 .personal-page {
     background: #e9e8e3;
@@ -1153,9 +1137,7 @@ a {
 }
 
 
-/* =========================================================
-   PERSONAL SECTIONS
-========================================================= */
+/* Personal: Sections */
 
 .personal-featured,
 .personal-posts {
@@ -1183,9 +1165,7 @@ a {
 }
 
 
-/* =========================================================
-   LATEST POST
-========================================================= */
+/* Personal: Latest Post */
 
 .featured-post {
     width: 100%;
@@ -1231,7 +1211,7 @@ a {
 }
 
 .featured-image-one {
-    background: #1a1a1a;
+    background: #1a1a1a url("images/posts/post-1.jpg") center / cover no-repeat;
 }
 
 .featured-image span {
@@ -1303,9 +1283,7 @@ a {
 }
 
 
-/* =========================================================
-   ALL POSTS
-========================================================= */
+/* Personal: All Posts */
 
 .post-grid {
     max-width: 1300px;
@@ -1406,19 +1384,19 @@ a {
 }
 
 .music {
-    background: #242424;
+    background: #242424 url("images/posts/music.jpg") center / cover no-repeat;
 }
 
 .projects {
-    background: #5c5b56;
+    background: #5c5b56 url("images/posts/projects.jpg") center / cover no-repeat;
 }
 
 .football {
-    background: #1c1c1c;
+    background: #1c1c1c url("images/posts/football.jpg") center / cover no-repeat;
 }
 
 .thoughts {
-    background: #96958e;
+    background: #96958e url("images/posts/thoughts.jpg") center / cover no-repeat;
 }
 
 .post-card-content {
@@ -1460,9 +1438,7 @@ a {
 }
 
 
-/* =========================================================
-   LOAD MORE
-========================================================= */
+/* Personal: Load More */
 
 .post-hidden {
     display: none;
@@ -1499,9 +1475,7 @@ a {
 }
 
 
-/* =========================================================
-   PERSONAL END
-========================================================= */
+/* Personal: End Section */
 
 .personal-end {
     min-height: 70vh;
@@ -1539,9 +1513,7 @@ a {
 }
 
 
-/* =========================================================
-   FOOTER
-========================================================= */
+/* Page Footer */
 
 .footer {
     padding: 28px 5vw;
@@ -1562,9 +1534,7 @@ a {
 }
 
 
-/* =========================================================
-   MODALS
-========================================================= */
+/* Page Modals */
 
 .modal {
     position: fixed;
@@ -1580,6 +1550,12 @@ a {
     padding: 30px;
 
     visibility: hidden;
+    pointer-events: none;
+}
+
+.modal.open {
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .modal.open {
@@ -1603,9 +1579,7 @@ a {
 }
 
 
-/* =========================================================
-   PROJECT MODAL
-========================================================= */
+/* Project: Modal */
 
 .modal-window {
     position: relative;
@@ -1638,6 +1612,7 @@ a {
 
 .modal-close {
     position: absolute;
+    z-index: 10;
 
     top: 20px;
     right: 25px;
@@ -1791,19 +1766,19 @@ a {
 }
 
 
-/* =========================================================
-   POST MODAL
-========================================================= */
+/* Posting Modal */
 
 .post-modal-window {
     position: relative;
     z-index: 2;
 
     width: min(1100px, 100%);
+    max-height: calc(100vh - 60px);
 
-    max-height: 92vh;
+    display: flex;
+    flex-direction: column;
 
-    overflow-y: auto;
+    overflow: hidden;
 
     background: #deddd8;
 
@@ -1816,6 +1791,22 @@ a {
         opacity 0.4s ease;
 }
 
+.post-modal-window {
+    box-sizing: border-box;
+}
+
+.post-modal-body {
+    box-sizing: border-box;
+}
+
+.post-modal-text p {
+    margin: 0;
+}
+
+.post-modal-text p + p {
+    margin-top: 25px;
+}
+
 .modal.open .post-modal-window {
     transform: translateY(0);
 
@@ -1825,6 +1816,7 @@ a {
 .post-modal-image {
     position: relative;
 
+    flex: 0 0 400px;
     height: 400px;
 
     padding: 25px;
@@ -1839,6 +1831,8 @@ a {
 
 .post-modal-image::before {
     content: "";
+
+    display: none;
 
     position: absolute;
 
@@ -1855,6 +1849,8 @@ a {
 
 .post-modal-image::after {
     content: "";
+
+    display: none;
 
     position: absolute;
 
@@ -1884,6 +1880,8 @@ a {
 
 .post-modal-body {
     padding: 55px;
+    overflow-y: auto;
+    min-height: 0;
 }
 
 .post-modal-meta {
@@ -1925,6 +1923,7 @@ a {
     font-size: 0.95rem;
 
     line-height: 1.9;
+    overflow-wrap: anywhere;
 }
 
 .post-modal-text p + p {
@@ -1963,9 +1962,7 @@ a {
 }
 
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+/* Responsive Pages */
 
 @media (max-width: 900px) {
 
@@ -2155,10 +2152,11 @@ a {
     }
 
     .post-modal-window {
-        max-height: 95vh;
+        max-height: calc(100vh - 30px);
     }
 
     .post-modal-image {
+        flex-basis: 280px;
         height: 280px;
     }
 
