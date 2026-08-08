@@ -1,320 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ryan Geiler</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ryan Geiler</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-<div class="desktop">
+<body class="landing-page">
 
-  <!-- PHOTO FOLDER -->
-  <div class="folder" id="folder1" style="top:100px; left:100px;">
-    <img src="images/JPG.png" draggable="false">
-    <span>Photo of Me</span>
-  </div>
+    <main class="landing">
 
-  <!-- ABOUT ME FOLDER -->
-  <div class="folder" id="folder2" style="top:200px; left:120px;">
-    <img src="images/documents.png" draggable="false">
-    <span>About Me</span>
-  </div>
+        <div class="landing-language" aria-label="Language">
+            <a href="#" id="language-en">EN</a>
+            <span>/</span>
+            <a href="#" id="language-de">DE</a>
+        </div>
 
-  <!-- WORK EXPERIENCE FOLDER -->
-  <div class="folder" id="folder3" style="top:300px; left:140px;">
-    <img src="images/documents.png" draggable="false">
-    <span>Work Experience</span>
-  </div>
+        <div class="landing-center">
 
-  <!-- EDUCATION FOLDER -->
-  <div class="folder" id="folder4" style="top:400px; left:160px;">
-    <img src="images/documents.png" draggable="false">
-    <span>Education</span>
-  </div>
+            <h1 class="landing-name">
+                ryan geiler
+            </h1>
 
-</div>
+            <div class="landing-links">
 
-<!-- IMAGE WINDOW -->
-<div class="window hidden" id="imageWindow">
-  <div class="title-bar" id="windowHeader1">
-    <span>me.jpg</span>
-    <div class="window-buttons">
-      <button class="minimizeBtn">—</button>
-      <button class="closeBtn">✕</button>
-    </div>
-  </div>
-  <div class="window-content">
-    <img src="images/me.jpg">
-  </div>
-</div>
+                <a href="portfolio.html" class="landing-link">
+                    <span data-i18n="landing.portfolio">portfolio</span>
+                    <span class="landing-arrow">↗</span>
+                </a>
 
-<!-- ABOUT WINDOW (NOTEPAD STYLE) -->
-<div class="window hidden notepad" id="aboutWindow">
-  <div class="title-bar" id="windowHeader2">
-    <span>about.txt - Notepad</span>
-    <div class="window-buttons">
-      <button class="minimizeBtn">—</button>
-      <button class="closeBtn">✕</button>
-    </div>
-  </div>
+                <a href="personal.html" class="landing-link">
+                    <span data-i18n="landing.personal">personal</span>
+                    <span class="landing-arrow">↗</span>
+                </a>
 
-  <div class="notepad-content">
-<p><strong>Name:</strong> Ryan Geiler</p>
-<p><strong>Age:</strong> 24</p>
-<p><strong>Email:</strong> ryangeileruni@gmail.com</p>
-<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ryangeiler" target="_blank">www.linkedin.com/in/ryangeiler</a></p>
-<p><strong>Description:</strong></p>
-<p>Welcome to my website! Here you can learn a little about me, my study and work experience, and hear about updates of my life from time to time. Make sure to click around to explore everything. If you have any questions or would like to get in contact with me, feel free to reach me by email or through LinkedIn.</p>
-  </div>
-</div>
+            </div>
 
-<!-- Work Experience Window -->
-<div class="window hidden" id="workWindow">
-  <div class="title-bar" id="workHeader">
-    <span>Work Experience</span>
-    <div class="window-buttons">
-      <button class="minimizeBtn">—</button>
-      <button class="closeBtn">✕</button>
-    </div>
-  </div>
-  <div class="window-content notepad">
-    <div class="notepad-content">
-<!-- Work experience jobs -->
-<div class="job">
-  <div class="job-title">
-    <span>Data Analyst (Working Student)</span>
-    <span class="job-date">Oct 2024 – Oct 2025</span>
-  </div>
-  <div class="company">DOLL Fahrzeugbau GmbH</div>
-  <div class="location">Oppenau, Germany</div>
-  <div class="description">Supported the further development & digitalization of reports and dashboards, helping lead the migration from manual Logistics & Warehouse departments to automated Power BI reports, while supporting IT & Production in data initiatives.</div>
-</div>
+        </div>
 
-<div class="job">
-  <div class="job-title">
-    <span>Data Analyst Intern</span>
-    <span class="job-date">Mar 2024 – Aug 2024</span>
-  </div>
-  <div class="company">DOLL Fahrzeugbau GmbH</div>
-  <div class="location">Oppenau, Germany</div>
-  <div class="description">Assisted with the creation and digitalization of reports and dashboards with SQL in the ERP system for the Lean Management and Logistics departments.</div>
-</div>
+        <div class="landing-footer">
+            <span>© 2026</span>
+            <span data-i18n="landing.germany">Germany</span>
+        </div>
 
-<div class="job">
-  <div class="job-title">
-    <span>Store Clerk</span>
-    <span class="job-date">Mar 2020 – Jul 2020</span>
-  </div>
-  <div class="company">Netto Marken-Discount</div>
-  <div class="location">Oppenau, Germany</div>
-  <div class="description">Assisted with stocking shelves, maintaining inventory accuracy, and supporting daily store operations to ensure efficient product availability and organization.</div>
-</div>
-    </div>
-  </div>
-</div>
+    </main>
 
-<!-- Education Window -->
-<div class="window hidden" id="educationWindow">
-  <div class="title-bar" id="educationHeader">
-    <span>Education</span>
-    <div class="window-buttons">
-      <button class="minimizeBtn">—</button>
-      <button class="closeBtn">✕</button>
-    </div>
-  </div>
-  <div class="window-content notepad">
-    <div class="notepad-content">
-<div class="job">
-  <div class="job-title">
-    <span>Bachelor of Science in International Business Information Systems</span>
-    <span class="job-date">Expected March 2026</span>
-  </div>
-  <div class="company">Hochschule Furtwangen</div>
-  <div class="location">Furtwangen, Germany</div>
-  <div class="description">Relevant coursework: Databases, Business Intelligence & Data Analytics, Data Science & Machine Learning, ERP Systems, Management Accounting & Controlling, Business Process Optimization, Applied Algorithms & Data Structures, Signal processing & Statistics for Data Science, Natural Language Processing & Text Mining for AI.</div>
-</div>
-
-<div class="job">
-  <div class="job-title">
-    <span>Studienkolleg Feststellungprüfung (University Qualification Exam)</span>
-    <span class="job-date">Mar 2021 – Mar 2022</span>
-  </div>
-  <div class="company">Hochschule Konstanz für Technik, Wirtschaft und Gestaltung</div>
-  <div class="location">Konstanz, Germany</div>
-  <div class="description">Preparation for university entry exams and qualification for studies in Germany.</div>
-</div>
-
-<div class="job">
-  <div class="job-title">
-    <span>Gap Year</span>
-    <span class="job-date">Jan 2020 – Feb 2021</span>
-  </div>
-  <div class="company"></div>
-  <div class="location"></div>
-  <div class="description">Gap year for relocation from USA to Germany & orientation on study options</div>
-</div>
-
-<div class="job">
-  <div class="job-title">
-    <span>High School Diploma</span>
-    <span class="job-date">Aug 2016 – Dec 2019</span>
-  </div>
-  <div class="company">Waterloo High School</div>
-  <div class="location">Waterloo, Illinois, USA</div>
-  <div class="description"></div>
-</div>
-    </div>
-  </div>
-</div>
-
-<!-- Taskbar -->
-<div class="taskbar">
-  <div class="start" id="startBtn">
-    <img src="images/start.png">
-  </div>
-  <div class="taskbar-windows" id="taskbarWindows"></div>
-  <div class="time-container">
-    <div id="time"></div>
-    <div id="date"></div>
-  </div>
-</div>
-
-<script>
-/* =========================
-   UTILITY FUNCTIONS
-========================= */
-function makeFolderInteractive(folderEl, windowEl) {
-  let isDragging = false;
-  let dragMoved = false;
-  let offsetX = 0;
-  let offsetY = 0;
-
-  folderEl.addEventListener("mousedown", (e) => {
-    dragMoved = false;
-    offsetX = e.clientX - folderEl.offsetLeft;
-    offsetY = e.clientY - folderEl.offsetTop;
-
-    function onMouseMove(e) {
-      dragMoved = true;
-      let x = e.clientX - offsetX;
-      let y = e.clientY - offsetY;
-      const maxX = window.innerWidth - folderEl.offsetWidth;
-      const maxY = window.innerHeight - folderEl.offsetHeight - 40;
-      x = Math.max(0, Math.min(x, maxX));
-      y = Math.max(0, Math.min(y, maxY));
-      folderEl.style.left = x + "px";
-      folderEl.style.top = y + "px";
-    }
-
-    function onMouseUp() {
-      document.removeEventListener("mousemove", onMouseMove);
-      document.removeEventListener("mouseup", onMouseUp);
-      setTimeout(() => dragMoved = false, 10);
-    }
-
-    document.addEventListener("mousemove", onMouseMove);
-    document.addEventListener("mouseup", onMouseUp);
-  });
-
-  folderEl.addEventListener("click", () => {
-    if (dragMoved) return;
-    windowEl.classList.remove("hidden");
-    const existing = document.getElementById("taskItem_" + windowEl.id);
-    if (existing) existing.remove();
-  });
-}
-
-function makeWindowDraggable(windowEl, headerEl) {
-  headerEl.addEventListener("mousedown", (e) => {
-    let shiftX = e.clientX - windowEl.offsetLeft;
-    let shiftY = e.clientY - windowEl.offsetTop;
-
-    function moveAt(e) {
-      let x = e.clientX - shiftX;
-      let y = e.clientY - shiftY;
-      const maxX = window.innerWidth - windowEl.offsetWidth;
-      const maxY = window.innerHeight - windowEl.offsetHeight - 40;
-      x = Math.max(0, Math.min(x, maxX));
-      y = Math.max(0, Math.min(y, maxY));
-      windowEl.style.left = x + "px";
-      windowEl.style.top = y + "px";
-    }
-
-    function onMouseMove(e) { moveAt(e); }
-    function onMouseUp() {
-      document.removeEventListener("mousemove", onMouseMove);
-      document.removeEventListener("mouseup", onMouseUp);
-    }
-
-    document.addEventListener("mousemove", onMouseMove);
-    document.addEventListener("mouseup", onMouseUp);
-  });
-}
-
-/* =========================
-   FOLDERS + WINDOWS SETUP
-========================= */
-const folderWindowPairs = [
-  {folder: "folder1", window: "imageWindow"},
-  {folder: "folder2", window: "aboutWindow"},
-  {folder: "folder3", window: "workWindow"},
-  {folder: "folder4", window: "educationWindow"},
-];
-
-folderWindowPairs.forEach(pair => {
-  const folderEl = document.getElementById(pair.folder);
-  const windowEl = document.getElementById(pair.window);
-  const headerEl = windowEl.querySelector(".title-bar");
-  const closeBtn = windowEl.querySelector(".closeBtn");
-  const minimizeBtn = windowEl.querySelector(".minimizeBtn");
-
-  makeFolderInteractive(folderEl, windowEl);
-  makeWindowDraggable(windowEl, headerEl);
-
-  closeBtn.onclick = () => {
-    windowEl.classList.add("hidden");
-    const existing = document.getElementById("taskItem_" + windowEl.id);
-    if (existing) existing.remove();
-  };
-
-  minimizeBtn.onclick = () => {
-    windowEl.classList.add("hidden");
-
-    if (!document.getElementById("taskItem_" + windowEl.id)) {
-      const task = document.createElement("div");
-      task.className = "task-item";
-      task.id = "taskItem_" + windowEl.id;
-      task.innerText = headerEl.querySelector("span").innerText;
-
-      task.onclick = () => {
-        windowEl.classList.remove("hidden");
-        task.remove();
-      };
-
-      document.getElementById("taskbarWindows").appendChild(task);
-    }
-  };
-});
-
-/* =========================
-   START BUTTON
-========================= */
-document.getElementById("startBtn").onclick = () => location.reload();
-
-/* =========================
-   CLOCK + DATE
-========================= */
-function updateTime() {
-  const now = new Date();
-  document.getElementById("time").innerText =
-    now.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
-  document.getElementById("date").innerText =
-    now.toLocaleDateString();
-}
-setInterval(updateTime, 1000);
-updateTime();
-
-</script>
+    <script src="script.js"></script>
 </body>
 </html>

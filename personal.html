@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal — Ryan Geiler</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="personal-page">
+
+<header class="navigation">
+
+    <a href="index.html" class="navigation-logo">
+        ryan geiler
+    </a>
+
+    <nav class="navigation-links">
+
+        <div class="navigation-pages">
+            <a href="portfolio.html" class="navigation-link" data-i18n="nav.portfolio">
+                portfolio
+            </a>
+
+            <a href="personal.html" class="navigation-link active" data-i18n="nav.personal">
+                personal
+            </a>
+        </div>
+
+        <span class="navigation-divider" aria-hidden="true"></span>
+
+        <div class="navigation-language" aria-label="Language">
+            <a href="#" id="language-en">EN</a>
+            <span>/</span>
+            <a href="#" id="language-de">DE</a>
+        </div>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="personal-hero reveal">
+
+        <div class="personal-label" data-i18n="personal.heroLabel">
+            personal / 2026
+        </div>
+
+        <h1>
+            <span data-i18n="personal.heroLine1">The things</span>
+            <br>
+            <span data-i18n="personal.heroLine2">I care about.</span>
+        </h1>
+
+        <p data-i18n="personal.heroDescription">
+            Music, games, football, random thoughts,
+            projects and whatever else happens to
+            interest me.
+        </p>
+
+    </section>
+
+    <section class="personal-featured reveal">
+
+        <div class="personal-section-title">
+            <span>01</span>
+            <span data-i18n="personal.latestPost">latest post</span>
+        </div>
+
+        <button class="featured-post post-trigger" type="button" data-post="post-1">
+
+            <div class="featured-image featured-image-one">
+                <span data-i18n="personal.latest">latest</span>
+            </div>
+
+            <div class="featured-content">
+
+                <div class="post-date">08.08.2026</div>
+
+                <h2 data-i18n="posts.post1.title">
+                    Building my own
+                    little corner
+                    of the internet.
+                </h2>
+
+                <p data-i18n="posts.post1.short">
+                    Why I decided to build a website from scratch
+                    and what I actually want to do with it.
+                </p>
+
+                <span class="read-link" data-i18n="personal.readArticle">
+                    read article →
+                </span>
+
+            </div>
+
+        </button>
+
+    </section>
+
+    <section class="personal-posts reveal">
+
+        <div class="personal-section-title">
+            <span>02</span>
+            <span data-i18n="personal.allPosts">all posts</span>
+        </div>
+
+        <div class="post-grid">
+
+            <button class="post-card post-trigger" type="button" data-post="post-1">
+                <div class="post-card-image music">
+                    <span data-i18n="postCard.post1.category">01 / thoughts</span>
+                </div>
+                <div class="post-card-content">
+                    <div class="post-date">08.08.2026</div>
+                    <h2 data-i18n="posts.post1.title">Building my own little corner of the internet.</h2>
+                    <p data-i18n="posts.post1.card">Why I decided to build a website from scratch.</p>
+                    <span class="read-link" data-i18n="personal.read">read →</span>
+                </div>
+            </button>
+
+<!--            <button class="post-card post-trigger" type="button" data-post="post-2">
+                <div class="post-card-image projects">
+                    <span data-i18n="postCard.post2.category">02 / music</span>
+                </div>
+                <div class="post-card-content">
+                    <div class="post-date">02.08.2026</div>
+                    <h2 data-i18n="posts.post2.title">Songs I've been listening to lately</h2>
+                    <p data-i18n="posts.post2.card">A collection of songs that have been on repeat recently.</p>
+                    <span class="read-link" data-i18n="personal.read">read →</span>
+                </div>
+            </button>
+
+            <button class="post-card post-trigger" type="button" data-post="post-3">
+                <div class="post-card-image football">
+                    <span data-i18n="postCard.post3.category">03 / football</span>
+                </div>
+                <div class="post-card-content">
+                    <div class="post-date">27.07.2026</div>
+                    <h2 data-i18n="posts.post3.title">Football, statistics &amp; obsession</h2>
+                    <p data-i18n="posts.post3.card">Thoughts about football, data and everything in between.</p>
+                    <span class="read-link" data-i18n="personal.read">read →</span>
+                </div>
+            </button>
+
+            <button class="post-card post-trigger" type="button" data-post="post-4">
+                <div class="post-card-image thoughts">
+                    <span data-i18n="postCard.post4.category">04 / thoughts</span>
+                </div>
+                <div class="post-card-content">
+                    <div class="post-date">20.07.2026</div>
+                    <h2 data-i18n="posts.post4.title">Whatever is on my mind</h2>
+                    <p data-i18n="posts.post4.card">Opinions, observations and random thoughts that don't fit anywhere else.</p>
+                    <span class="read-link" data-i18n="personal.read">read →</span>
+                </div>
+            </button>
+
+            <button class="post-card post-trigger post-hidden" type="button" data-post="post-5">
+                <div class="post-card-image projects">
+                    <span data-i18n="postCard.post5.category">05 / projects</span>
+                </div>
+                <div class="post-card-content">
+                    <div class="post-date">12.07.2026</div>
+                    <h2 data-i18n="posts.post5.title">Making weird things for fun</h2>
+                    <p data-i18n="posts.post5.card">Random projects, experiments and things I built simply because I could.</p>
+                    <span class="read-link" data-i18n="personal.read">read →</span>
+                </div>
+            </button>
+
+            <button class="post-card post-trigger post-hidden" type="button" data-post="post-6">
+                <div class="post-card-image music">
+                    <span data-i18n="postCard.post6.category">06 / music</span>
+                </div>
+                <div class="post-card-content">
+                    <div class="post-date">05.07.2026</div>
+                    <h2 data-i18n="posts.post6.title">An unnecessarily long music playlist</h2>
+                    <p data-i18n="posts.post6.card">Some songs that somehow ended up becoming a very large playlist.</p>
+                    <span class="read-link" data-i18n="personal.read">read →</span>
+                </div>
+            </button>
+        -->
+        </div>
+
+        <button class="load-more-button" id="load-more" type="button" data-i18n="personal.loadMore">
+            load more ↓
+        </button>
+
+    </section>
+
+    <section class="personal-end reveal">
+
+        <h2 data-i18n="personal.endHeading">
+            That's all for now.
+        </h2>
+
+        <a href="index.html" data-i18n="footer.backHomeArrow">
+            back home →
+        </a>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+
+    <span>© 2026 Ryan Geiler</span>
+
+    <a href="index.html" data-i18n="footer.backHome">
+        back home ↑
+    </a>
+
+</footer>
+
+<div class="modal" id="post-modal" aria-hidden="true">
+
+    <div class="modal-backdrop"></div>
+
+    <div class="post-modal-window">
+
+        <button
+            class="modal-close"
+            type="button"
+            aria-label="Close post"
+            data-i18n-aria="modal.closePost"
+        >
+            ×
+        </button>
+
+        <div class="post-modal-image" id="post-modal-image">
+            <span id="post-modal-category">thoughts</span>
+        </div>
+
+        <div class="post-modal-body">
+
+            <div class="post-modal-meta">
+                <span id="post-modal-date">08.08.2026</span>
+                <span id="post-modal-number">01 / 06</span>
+            </div>
+
+            <h2 id="post-modal-title">Post title</h2>
+
+            <div class="post-modal-text" id="post-modal-text">
+                Post text.
+            </div>
+
+            <div class="post-modal-navigation">
+
+                <button type="button" class="post-nav-button" id="post-previous" data-i18n="modal.previous">
+                    ← previous
+                </button>
+
+                <button type="button" class="post-nav-button" id="post-next" data-i18n="modal.next">
+                    next →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
