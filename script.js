@@ -452,6 +452,18 @@ function setLanguage(language) {
 
     updateDynamicContent();
 
+    /*
+     * IMPORTANT:
+     * Always refresh the currently selected post using the
+     * newly selected language.
+     *
+     * This makes sure the modal never keeps the previous
+     * language's title, category or article text.
+     */
+    if (typeof currentPostIndex === "number" && postModal) {
+        displayPost(currentPostIndex);
+    }
+
     /* Update the visual state of the language buttons. */
     updateLanguageSwitcher(currentLanguage);
 
@@ -694,51 +706,33 @@ function displayPost(index) {
     currentPostIndex = index;
 
     const postMeta = posts[index];
-    const post = getPost(postMeta.id);
+
+    const languagePosts = translations[currentLanguage].posts;
+    const post = languagePosts[postMeta.id];
 
     if (!post) {
         return;
     }
 
-    if (postModalImage) {
-        postModalImage.className = "post-modal-image";
-        postModalImage.classList.add(postMeta.imageClass);
-    }
+    postModalImage.className = "post-modal-image";
+    postModalImage.classList.add(postMeta.imageClass);
 
-    if (postModalCategory) {
-        postModalCategory.textContent = post.category;
-    }
+    postModalCategory.textContent = post.category;
+    postModalDate.textContent = postMeta.date;
 
-    if (postModalDate) {
-        postModalDate.textContent = postMeta.date;
-    }
+    postModalNumber.textContent =
+        `${String(index + 1).padStart(2, "0")} / ${String(posts.length).padStart(2, "0")}`;
 
-    if (postModalNumber) {
-        postModalNumber.textContent =
-            `${String(index + 1).padStart(2, "0")} / ${String(posts.length).padStart(2, "0")}`;
-    }
+    postModalTitle.textContent = post.title;
 
-    if (postModalTitle) {
-        postModalTitle.textContent = post.title;
-    }
 
-    if (postModalText) {
-        postModalText.innerHTML = "";
+    postModalText.innerHTML = "";
 
-        post.text.forEach((paragraph) => {
-            const paragraphElement = document.createElement("p");
-            paragraphElement.textContent = paragraph;
-            postModalText.appendChild(paragraphElement);
-        });
-    }
-
-    if (postModal) {
-        const modalWindow = postModal.querySelector(".post-modal-window");
-
-        if (modalWindow) {
-            modalWindow.scrollTop = 0;
-        }
-    }
+    post.text.forEach((paragraph) => {
+        const paragraphElement = document.createElement("p");
+        paragraphElement.textContent = paragraph;
+        postModalText.appendChild(paragraphElement);
+    });
 }
 
 function setupPostTriggers() {
@@ -789,9 +783,6 @@ if (loadMoreButton) {
 }
 
 /* Close pop-ups */
-
-/* Use delegated handlers so modal controls remain clickable even if
-   modal contents are changed dynamically. */
 document.addEventListener("click", (event) => {
     const closeButton = event.target.closest(".modal-close");
 
