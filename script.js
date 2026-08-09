@@ -810,6 +810,89 @@ document.addEventListener("keydown", (event) => {
     });
 });
 
+
+/* =========================================================
+   RANDOM SHOOTING STAR
+   ========================================================= */
+
+function initShootingStar() {
+
+    // Only run this effect on the landing page.
+    if (window.location.pathname.endsWith("index.html") === false &&
+        window.location.pathname !== "/" &&
+        window.location.pathname !== "") {
+        return;
+    }
+
+    const shootingStar = document.querySelector(".shooting-star");
+
+    if (!shootingStar) {
+        return;
+    }
+
+    // Respect users who have requested reduced motion.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        return;
+    }
+
+    function createShootingStar() {
+
+        // Random starting position.
+        const startX = Math.random() * window.innerWidth * 0.85;
+        const startY = Math.random() * window.innerHeight * 0.55;
+
+        // Shooting stars travel down and to the right.
+        const distance = 450 + Math.random() * 350;
+
+        const endX = startX + distance;
+        const endY = startY + distance * 0.45;
+
+        // Slightly vary the angle.
+        const angle = 20 + Math.random() * 20;
+
+        shootingStar.style.setProperty("--star-start-x", `${startX}px`);
+        shootingStar.style.setProperty("--star-start-y", `${startY}px`);
+        shootingStar.style.setProperty("--star-end-x", `${endX}px`);
+        shootingStar.style.setProperty("--star-end-y", `${endY}px`);
+        shootingStar.style.setProperty("--star-angle", `${angle}deg`);
+
+        // Restart the animation cleanly.
+        shootingStar.classList.remove("is-shooting");
+
+        // Force the browser to recognize the animation restart.
+        void shootingStar.offsetWidth;
+
+        shootingStar.classList.add("is-shooting");
+
+        // Schedule the next appearance.
+        scheduleNextShootingStar();
+    }
+
+    function scheduleNextShootingStar() {
+
+        /*
+         * Random delay between roughly 30 and 90 seconds.
+         * This keeps the effect rare rather than repetitive.
+         */
+        const delay =
+            30000 +
+            Math.random() * 60000;
+
+        window.setTimeout(createShootingStar, delay);
+    }
+
+    // Don't have one appear immediately when the page loads.
+    // Wait between 10 and 40 seconds for the first one.
+    const initialDelay =
+        10000 +
+        Math.random() * 30000;
+
+    window.setTimeout(createShootingStar, initialDelay);
+}
+
+initShootingStar();
+
+
 /* Dynamic content updates */
 
 function updateDynamicContent() {

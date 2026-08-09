@@ -2257,3 +2257,103 @@ a {
         font-size: 3rem;
     }
 }
+
+/* Landing Page: Shooting Star */
+
+.shooting-star {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 3px;
+    height: 3px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 6px rgba(255, 255, 255, 0.95),
+        0 0 14px rgba(255, 255, 255, 0.65);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    z-index: 9999;
+
+    transform: translate3d(-100px, -100px, 0);
+
+    will-change: transform, opacity;
+}
+
+.shooting-star::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    right: 2px;
+
+    width: 120px;
+    height: 1px;
+
+    transform: translateY(-50%);
+
+    transform-origin: right center;
+
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0.75),
+        rgba(255, 255, 255, 0)
+    );
+
+    filter: blur(0.4px);
+}
+
+.shooting-star.is-shooting {
+    animation: shooting-star-flight 1.15s ease-out forwards;
+}
+
+@keyframes shooting-star-flight {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translate3d(
+                var(--star-start-x),
+                var(--star-start-y),
+                0
+            )
+            rotate(var(--star-angle));
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 0;
+
+        transform:
+            translate3d(
+                var(--star-end-x),
+                var(--star-end-y),
+                0
+            )
+            rotate(var(--star-angle));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .shooting-star {
+        display: none;
+    }
+
+}
