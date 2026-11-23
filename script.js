@@ -28,12 +28,32 @@ const translations = {
             experienceLabel: "EXPERIENCE",
             experience1Title: "Working Student / Data Analyst",
             experience2Title: "Internship / Data Analyst",
-            experience1Description: "Supported the further development & digitalization of reports and dashboards, helping lead the migration from manual Logistics & Warehouse departments to automated Power BI reports, while supporting IT & Production in data initiatives.",
-            experience2Description: "Assisted with the creation and digitalization of reports and dashboards with SQL in the ERP system for the Lean Management and Logistics departments.",
+            experience1Date: "OCT 2024 - OCT 2025 · NOV 2026 - EXPECTED OCT 2027",
+            experience2Date: "MAR 2024 - SEP 2024",
+            experience1Description: "Further developed and digitalized reports and dashboards. Automated manual Logistics & Warehouse reports with Power BI and supported data initiatives in Industrial Engineering and IT.",
+            experience2Description: "Created SQL-based reports and dashboards in the ERP system and supported the Lean Management and Logistics departments with data preparation.",
             education: "education",
             masters: "MASTER'S DEGREE",
             bachelors: "BACHELOR'S DEGREE",
+            mastersDate: "SEP 2026 - PRESENT",
+            mastersSchool: "Hochschule Offenburg · Gengenbach, Germany",
+            mastersDescription: "Focus areas include applied artificial intelligence, controlling and current topics in business information systems.",
+            bachelorsSchool: "Hochschule Furtwangen · Furtwangen im Schwarzwald, Germany",
+            bachelorsDescription: "Focus areas included databases, business intelligence and data analytics, with further study in machine learning, natural language processing and text mining. Bachelor's thesis on AI implementation in small and medium-sized enterprises.",
             selectedProjects: "selected projects",
+            otherProjects: "other projects & activities",
+            projectLabel: "PROJECT",
+            awardLabel: "AWARD",
+            trainingLabel: "TRAINING",
+            steepleviewDate: "MAY 2019 - PRESENT",
+            steepleviewRole: "Website Developer · Bad Peterstal-Griesbach, Germany",
+            steepleviewDescription: "Developed and continuously maintain a website for holiday apartments using HTML, CSS and JavaScript.",
+            steepleviewLink: "visit website ↗",
+            hackathonTitle: "Finalist · Bundesliga AI Hackathon 2025",
+            hackathonOrganization: "EintrachtTech & DFL · Frankfurt am Main, Germany",
+            hackathonDescription: "Developed a machine-learning model to classify player poses for the DFL Media Day archive.",
+            awsTitle: "AWS Training",
+            awsDescription: "Completed introductory training in Machine Learning, Generative AI and Data Engineering.",
             toolbox: "toolbox",
             skillsHeading: "Things I work with.",
             contactSmall: "have a project?",
@@ -43,14 +63,14 @@ const translations = {
         },
 
         projects: {
-            bundesliga: {
-                category: "data / football",
-                short: "Football data analysis, visualization and statistics.",
-                title: "SC Freiburg Analytics",
-                date: "2026",
-                description: "A football analytics application currently under development, focused on exploring SC Freiburg data through interactive statistics, visualizations and analytical tools, including player comparisons, visual player mapping and more.",
-                purpose: "The project is designed to make SC Freiburg data easier to explore while combining programming, data analysis and visualization into an interactive analytical platform. The application is currently under development and is not yet publicly available.",
-                technologies: ["Python", "Streamlit", "Pandas", "Data Analysis", "Visualization"],
+            scouting: {
+                category: "data / sports analytics",
+                short: "A scouting platform combining player performance and physical attributes with soft skills, individual development recommendations and actionable insights.",
+                title: "Player Scouting Platform",
+                date: "2026 - present",
+                description: "Together with a teammate, I am developing a player scouting platform as part of the Current Topics in Business Information Systems course. The platform considers more than physical attributes and technical performance by also incorporating players' soft skills into their profiles and evaluation.",
+                purpose: "The goal is to give scouts and club staff a more rounded view of each player. Based on a player's profile, the platform provides opinions on their strengths and development areas, along with concrete recommendations on how they could improve their skills and further develop if signed by a club.",
+                technologies: ["Player Scouting", "Data Analytics", "Soft Skills", "Player Evaluation", "Recommendations"],
                 link: null
             },
 
@@ -225,12 +245,32 @@ const translations = {
             experienceLabel: "ERFAHRUNG",
             experience1Title: "Werkstudent / Datenanalyst",
             experience2Title: "Praktikum / Datenanalyst",
-            experience1Description: "Unterstützung bei der Weiterentwicklung & Digitalisierung von Reports und Dashboards, Mitwirkung bei der Umstellung von manuellen Prozessen in den Bereichen Logistik & Lager auf automatisierte Power-BI-Reports sowie Unterstützung von IT & Produktion bei datenbezogenen Initiativen.",
-            experience2Description: "Unterstützung bei der Erstellung und Digitalisierung von Reports und Dashboards mit SQL im ERP-System für die Bereiche Lean Management und Logistik.",
+            experience1Date: "10.2024 - 10.2025 · 11.2026 - vsl. 10.2027",
+            experience2Date: "03.2024 - 09.2024",
+            experience1Description: "Digitalisierung und Weiterentwicklung von Reports und Dashboards. Automatisierung manueller Logistik- und Lagerberichte mit Power BI sowie Unterstützung von Dateninitiativen in Industrial Engineering und IT.",
+            experience2Description: "Erstellung SQL-basierter Reports und Dashboards im ERP-System. Unterstützung der Fachbereiche Lean Management und Logistik bei der Datenaufbereitung.",
             education: "ausbildung",
             masters: "MASTERABSCHLUSS",
             bachelors: "BACHELORABSCHLUSS",
+            mastersDate: "09.2026 - heute",
+            mastersSchool: "Hochschule Offenburg · Gengenbach, Deutschland",
+            mastersDescription: "Schwerpunkte in angewandter KI, Controlling und aktuellen Themen der Wirtschaftsinformatik.",
+            bachelorsSchool: "Hochschule Furtwangen · Furtwangen im Schwarzwald, Deutschland",
+            bachelorsDescription: "Schwerpunkte in Datenbanken, Business Intelligence und Data Analytics. Vertiefung in Machine Learning, Natural Language Processing und Text Mining. Bachelorarbeit über die Implementierung von KI in kleinen und mittleren Unternehmen (KMU).",
             selectedProjects: "ausgewählte projekte",
+            otherProjects: "weitere projekte & aktivitäten",
+            projectLabel: "PROJEKT",
+            awardLabel: "AUSZEICHNUNG",
+            trainingLabel: "WEITERBILDUNG",
+            steepleviewDate: "05.2019 - heute",
+            steepleviewRole: "Webentwickler · Bad Peterstal-Griesbach, Deutschland",
+            steepleviewDescription: "Entwicklung und kontinuierliche Pflege einer Website für Ferienwohnungen mit HTML, CSS und JavaScript.",
+            steepleviewLink: "Website besuchen ↗",
+            hackathonTitle: "Finalist · Bundesliga AI Hackathon 2025",
+            hackathonOrganization: "EintrachtTech & DFL · Frankfurt am Main, Deutschland",
+            hackathonDescription: "Entwicklung eines Machine-Learning-Modells zur Klassifikation von Spielerposen für das Media-Day-Archiv der DFL.",
+            awsTitle: "AWS-Schulungen",
+            awsDescription: "Absolvierung von Einführungsschulungen zu Machine Learning, Generative AI und Data Engineering.",
             toolbox: "werkzeugkasten",
             skillsHeading: "Womit ich arbeite.",
             contactSmall: "ein projekt?",
@@ -240,14 +280,14 @@ const translations = {
         },
 
         projects: {
-            bundesliga: {
-                category: "daten / fußball",
-                short: "Fußballdatenanalyse, Visualisierung und Statistiken.",
-                title: "Bundesliga Analytics",
-                date: "2026",
-                description: "Eine derzeit in Entwicklung befindliche Fußballanalyse-Anwendung zur Erkundung von Daten des SC Freiburg durch interaktive Statistiken, Visualisierungen und analytische Werkzeuge, darunter Spielervergleiche, visuelle Spielerkarten und weitere Analysefunktionen.",
-                purpose: "Das Projekt soll die Erkundung von SC-Freiburg-Daten erleichtern und dabei Programmierung, Datenanalyse und Visualisierung in einer interaktiven Analyseplattform verbinden. Die Anwendung befindet sich derzeit in Entwicklung und ist noch nicht öffentlich verfügbar.",
-                technologies: ["Python", "Streamlit", "Pandas", "Datenanalyse", "Visualisierung"],
+            scouting: {
+                category: "daten / sportanalyse",
+                short: "Eine Scouting-Plattform, die Spielerleistung und körperliche Eigenschaften mit Soft Skills, individuellen Entwicklungsempfehlungen und konkreten Handlungsvorschlägen verbindet.",
+                title: "Scouting-Plattform",
+                date: "2026 - heute",
+                description: "Gemeinsam mit einem Kommilitonen entwickle ich im Rahmen der Lehrveranstaltung Aktuelle Themen der Wirtschaftsinformatik eine Scouting-Plattform. Dabei werden neben körperlichen Eigenschaften und technischen Leistungen auch die Soft Skills der Spieler in ihre Profile und Bewertung einbezogen.",
+                purpose: "Ziel ist es, Scouts und Vereinsverantwortlichen einen umfassenderen Eindruck eines Spielers zu vermitteln. Auf Grundlage des jeweiligen Spielerprofils zeigt die Plattform Stärken und Entwicklungsbereiche auf und gibt konkrete, nachvollziehbare Empfehlungen dazu, wie ein Spieler seine Fähigkeiten verbessern und sich weiterentwickeln könnte, wenn er verpflichtet wird.",
+                technologies: ["Spieler-Scouting", "Datenanalyse", "Soft Skills", "Spielerbewertung", "Handlungsempfehlungen"],
                 link: null
             },
 
@@ -563,13 +603,17 @@ const cvFiles = {
 };
 
 const projectNumbers = {
-    bundesliga: "01",
+    "scouting-platform": "01",
     deathtunes: "02",
     "ai-smes": "03"
 };
 
 function getProject(projectId) {
-    const key = projectId === "ai-smes" ? "ai" : projectId;
+    const key = projectId === "ai-smes"
+        ? "ai"
+        : projectId === "scouting-platform"
+            ? "scouting"
+            : projectId;
     return translations[currentLanguage].projects[key];
 }
 
